@@ -7,6 +7,7 @@ import Speakers from './components/Speaker'
 import Intro from './components/Intro'
 import Home from './components/Home'
 import Navbar from './components/Navbar/Navbar/navbar'
+import About from './components/About';
 
 
 
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Home />
+      <About/>
       <Intro />
       <Speakers />
       <Workshop />

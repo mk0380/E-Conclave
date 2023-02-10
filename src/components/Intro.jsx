@@ -65,20 +65,18 @@ function Intro() {
       <h1
         style={{ "font-family": "'Inter', sans-serif" }}
         data-aos="fade-up"
-        data-aos-delay="500"
+        data-aos-delay="300"
       >
         INTRODUCTIONS
       </h1>
       <p
         style={{ "font-family": "'Montserrat', sans-serif" }}
         data-aos="fade-up"
-        data-aos-delay="500"
+        data-aos-delay="300"
       >
-        Industry 4.0 refers to the current trend of automation and data exchange
-        in the manufacturing technologies, celebrated as the next industrial
-        revolution.Techkriti agnizes this revolution and brings to you the
-        unprecedented technical summit with the theme: Industry 4.0, for the
-        first time in India by any institute.
+        The Entrepreneurial Conclave is conducted in conjunction with the main festival.
+        E- Conclave aims to bring together India’s finest minds and accentuate the ideas and developments shooting up among entrepreneurs across the world. The conclave shall emphasize the challenges of an entrepreneur, the journey from ideation to success, and planning to execution. Growth-minded entrepreneurs and investors from all over the country can come together and take their businesses to the next level.
+
       </p>
       <div className="cards">
         {intro.map((data, idex) => {

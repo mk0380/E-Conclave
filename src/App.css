@@ -57,6 +57,37 @@ h4 {
   font-size: 40px;
 }
 
+/* ----------------about----------------- */
+.about{
+  width: 100%;
+  background-image: url("./img/intro.jpg");
+  background-size: cover;
+  background-position: top;
+  padding: 3%;
+}
+.about h1{
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  margin: 2%;
+  margin-bottom: 4%;
+  letter-spacing: 0.8rem;
+}
+.about h3{
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  margin: 2%;
+  margin-bottom: 4%;
+  letter-spacing: 0.1rem;
+}
+.about p{
+  color: white;
+  margin: 4%;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+}
+
 /* -------------------introduction------------------ */
 .introduction {
   width: 100%;
@@ -132,6 +163,13 @@ h4 {
   margin: 2%;
   margin-bottom: 4%;
   letter-spacing: 0.8rem;
+}
+
+.speakers p{
+  color: white;
+  margin: 4%;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
 }
 
 .speakers .text {
@@ -412,7 +450,7 @@ h4 {
     /* border: 2px solid green; */
     justify-content: space-around;
     height: 100vh;
-    overflow: scroll;
+    /* overflow: scroll; */
     /* flex-basis: 500px; */
     /* background-color: black; */
   }

@@ -69,7 +69,7 @@ function Footer() {
         <hr
           style={{ width: "100%" }}
           data-aos="fade-up"
-          data-aos-delay="1600"
+          data-aos-delay="1500"
         />
         <p
           style={{
@@ -79,7 +79,7 @@ function Footer() {
             "font-family": "'Montserrat', sans-serif",
           }}
           data-aos="fade-up"
-          data-aos-delay="1900"
+          data-aos-delay="1700"
         >
           Copyright © 2022-23 All Rights Reserved by TECHKRITI-IITK.
         </p>

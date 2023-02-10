@@ -18,7 +18,7 @@ function Navbar() {
         } else setIcon("nav__toggler");
     };
     return (
-        <nav className="nav">
+        <nav className="nav" style={{ "font-family": "'Montserrat', sans-serif" }}>
             <Link to="home" spy={true} smooth={true} offset={-10} duration={700} className="nav__brand">
                 <img alt='logo' className='te' src={logo} style={{ "cursor": "pointer", "marginLeft": "2%" }} />
             </Link>

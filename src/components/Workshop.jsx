@@ -9,9 +9,9 @@ function Workshop() {
   return (
     <section className="workshop" id="workshop">
       <h1
-        style={{ "font-family": "'Inter', sans-serif" }}
+        style={{ "font-family": "'Montserrat', sans-serif" }}
         data-aos="fade-up"
-        data-aos-delay="500"
+        data-aos-delay="300"
       >
         WORKSHOP
       </h1>

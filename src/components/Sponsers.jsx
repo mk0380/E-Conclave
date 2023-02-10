@@ -10,9 +10,9 @@ function Sponsers() {
   return (
     <section className="sponsers" id="partners">
       <h1
-        style={{ "font-family": "'Inter', sans-serif" }}
+        style={{ "font-family": "'Montserrat', sans-serif" }}
         data-aos="fade-up"
-        data-aos-delay="500"
+        data-aos-delay="300"
       >
         SPONSERS
       </h1>
