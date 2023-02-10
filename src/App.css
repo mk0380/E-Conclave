@@ -1,38 +1,543 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  /* border: 2px solid orange; */
+}
+
+/* -----------------navbar --------------------------------*/
+
+.image {
+  background-image: url("./img/main.jpg");
+  /* background-attachment: fixed; */
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: top;
+}
+.image img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.image .text {
+  position: relative;
+  top: 10%;
+}
+.image .text h1 {
+  font-size: 0.1%;
+  letter-spacing: 0.6rem;
+  margin: 5% 0;
+}
+
+.image .text {
+  display: flex;
+  padding-top: 210px;
+  justify-content: center;
+  color: white;
+  font-size: large;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image .text p,
+h1,
+h4 {
+  margin: 10px 0;
+  letter-spacing: 4px;
+}
+.image .text h1 {
+  font-size: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* -------------------introduction------------------ */
+.introduction {
+  width: 100%;
+  background-image: url("./img/intro.jpg");
+  background-size: cover;
+  background-position: top;
+  padding: 3%;
+}
+.introduction h1 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  margin: 2%;
+  margin-bottom: 4%;
+  letter-spacing: 0.8rem;
+}
+.introduction p {
+  color: white;
+  margin: 4%;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+}
+.introduction .cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 4% 0;
+}
+.introduction .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  /* border: 2px solid red; */
+  margin: 1.5% 0;
+}
+
+.introduction .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.introduction .container {
+  padding: 2px 16px;
+  text-align: center;
+}
+.introduction .container h4 {
+  color: white;
+  letter-spacing: 0.2rem;
+  font-size: 25px;
+  font-weight: bold;
+}
+.introduction .container p {
+  text-align: left;
+  font-size: 16px;
+}
+.introduction .container a {
+  color: #0077b5;
+  font-size: 16px;
+  /* padding: 5% 0; */
+}
+/* -------------------------speakers---------------------- */
+
+.speakers {
+  width: 100%;
+  background-image: url("./img/intro.jpg");
+  background-size: cover;
+  background-position: top;
+  padding: 3%;
+}
+.speakers h1 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  margin: 2%;
+  margin-bottom: 4%;
+  letter-spacing: 0.8rem;
+}
+
+.speakers .text {
+  width: 100%;
+  position: absolute;
+  bottom: 70px;
+  text-align: center;
+  color: wheat;
+}
+.speakers .text h2 {
+  letter-spacing: 0.05rem;
+  margin: 2px auto;
+}
+.speakers .text p {
+  font-size: 14px;
+  letter-spacing: 0.01rem;
+}
+
+.slider {
+  height: 450px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slide-track {
+  display: flex;
+  width: calc(250px * 20);
+  animation: scroll 30s linear infinite;
+}
+.slide-track:hover {
+  animation-play-state: paused;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 10));
   }
 }
+.slide {
+  height: 380px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  perspective: 150px;
+  margin: 0.5%;
+}
+.slide img {
+  width: 100%;
+  object-fit: contain;
+  transition: transform 1s;
+}
+.slide img:hover {
+  transform: translateZ(20px);
+}
+.slider::before,
+.slider::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ------------------------workshop--------------------------- */
+
+.workshop {
+  width: 100%;
+  background-image: url("./img/intro.jpg");
+  background-size: cover;
+  background-position: top;
+  padding: 4%;
+  margin: 0;
+  /* border: 2px solid red; */
+  /* overflow-x: hidden; */
+}
+.workshop h1 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  margin: 2%;
+  margin-bottom: 4%;
+  letter-spacing: 0.8rem;
+}
+.workshop .cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 4% 0;
+}
+.workshop .card {
+  height: 400px;
+  width: 25%;
+  margin: 1% 0%;
+  border: 3px solid white;
+  border-radius: 10px;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  font-size: 18px;
+  letter-spacing: 0.09rem;
+  background: rgba(217, 217, 217, 0.18);
+  text-align: center;
+}
+.workshop .card a {
+  border: 2px solid white;
+  padding: 2% 5%;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* --------------------schedule--------------------- */
+
+.schedule {
+  width: 100%;
+  background-image: url("./img/intro.jpg");
+  background-size: cover;
+  background-position: top;
+  padding: 3%;
+}
+.schedule h1 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  margin: 2%;
+  margin-bottom: 4%;
+  letter-spacing: 0.8rem;
+}
+.schedule .btn {
+  display: flex;
+  justify-content: space-around;
+}
+.schedule a {
+  font-size: 22px;
+  letter-spacing: 0.09rem;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 1% 2%;
+  color: white;
+  text-decoration: none;
+}
+
+/* ----------------------sponsers---------------------- */
+
+.sponsers {
+  width: 100%;
+  background-image: url("./img/intro.jpg");
+  background-size: cover;
+  background-position: top;
+  padding: 3%;
+}
+.sponsers h1 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  margin: 2%;
+  margin-bottom: 4%;
+  letter-spacing: 0.8rem;
+}
+
+.sponsers .cards {
+  background: rgba(59, 116, 148, 0.3);
+  border: 3px solid rgba(133, 133, 133, 0.5);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 4% 0;
+}
+
+.sponsers .card {
+  width: 20%;
+  height: 200px;
+  background-color: white;
+  margin: 2% 1%;
+}
+
+.sponsers .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* -------------------footer----------------------------- */
+
+.footer {
+  width: 100%;
+  background-image: url("./img/intro.jpg");
+  background-size: cover;
+  background-position: top;
+  padding: 3%;
+  text-align: center;
+  height: 90vh;
+}
+.footer .logo {
+  margin: 0 auto;
+}
+
+.footer img {
+  width: 15%;
+  height: 6%;
+}
+
+.footer hr {
+  width: 50%;
+  margin: auto;
+}
+.footer .links {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.footer p {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.footer .links .fa {
+  padding: 0;
+  margin: 3%;
+  font-size: 2.4rem;
+  /* color: white; */
+}
+.footer .links a {
+  color: white;
+}
+.fa-facebook:hover {
+  color: #3b5998;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+.fa-youtube:hover {
+  color: #ff0000;
+}
+.fa-instagram:hover {
+  color: #c32aa3;
+}
+.fa-linkedin:hover {
+  color: #0077b5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* -----------------------------media query----------------------------- */
+
+@media screen and (max-width: 768px) {
+  /* introduction */
+  .introduction {
+    /* border: 2px solid red; */
+    text-align: center;
+    /* margin-top: 10; */
+    padding: 4%;
   }
-  to {
-    transform: rotate(360deg);
+  .introduction h1 {
+    padding-top: 20px;
+    font-size: 1.5rem;
+  }
+  .introduction p {
+    font-size: 1rem;
+  }
+  .introduction .cards {
+    /* background-color: lightgreen; */
+    /* flex-direction: column; */
+    width: 100%;
+    /* border: 2px solid green; */
+    justify-content: space-around;
+    height: 100vh;
+    overflow: scroll;
+    /* flex-basis: 500px; */
+    /* background-color: black; */
+  }
+  .introduction .card {
+    width: 80%;
+    /* height: auto; */
+    /* margin: auto; */
+    /* border: 2px solid red; */
+    /* padding: 0; */
+    overflow: hidden;
+    margin: 10px auto;
+    /* border: 2px solid red; */
+  }
+  .introduction .card .img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .introduction img {
+    /* height: 100%; */
+  }
+  /* .introduction .card .text{
+      font-size: 10px;
+      height: 46px;
+      padding: 0;
+    } */
+  .introduction .text h4 {
+    font-size: 0.5rem;
+  }
+  .introduction .text p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  /* speakers */
+  .speakers h1 {
+    font-size: 1.5rem;
+  }
+  .speakers .cards {
+    /* background-color: lightgreen; */
+    flex-direction: column;
+    width: 100%;
+    /* border: 2px solid green; */
+    justify-content: space-around;
+    /* flex-basis: 500px; */
+    /* background-color: black; */
+  }
+  .speakers .card {
+    width: 60%;
+    height: 200px;
+    /* margin: auto; */
+    /* border: 2px solid red; */
+    margin: 10px auto;
+    /* border: 2px solid red; */
+  }
+  .speakers .card .img {
+    height: 150px;
+  }
+  .speakers img {
+    height: 100%;
+  }
+  .speakers .card .text {
+    font-size: 10px;
+    height: 46px;
+    padding: 0;
+  }
+  /* ----------------------workshop------------------------- */
+  .workshop h1 {
+    font-size: 1.5rem;
+  }
+  .workshop .cards {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .workshop .card {
+    width: 60%;
+    height: 200px;
+    margin: 8px auto;
+  }
+  .workshop .card p {
+    font-size: 12px;
+  }
+  .workshop .card a {
+    font-size: 13px;
+  }
+  /* ------------------------schedule--------------------------- */
+  .schedule h1 {
+    font-size: 1.5rem;
+  }
+  .schedule a {
+    padding: 3px 6px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  /* -----------------sponsers---------------------- */
+  .sponsers {
+    width: 100vw;
+  }
+  .sponsers .cards {
+    width: 100%;
+    justify-content: space-around;
+    height: 85vh;
+    overflow-y: scroll;
+  }
+  .sponsers .card {
+    width: 60%;
+    height: 150px;
+    margin: 12px auto;
+  }
+  .sponsers h1 {
+    font-size: 1.5rem;
+  }
+  /* ---------------------footer------------------------ */
+  .footer {
+    text-align: center;
+    height: 380px;
+  }
+  .footer img {
+    width: 7rem;
+    height: 8rem;
+  }
+  .footer .links .fa {
+    font-size: 1.4rem;
+    margin: 0 1.5%;
+  }
+  .footer p {
+    font-size: 12px;
   }
 }
