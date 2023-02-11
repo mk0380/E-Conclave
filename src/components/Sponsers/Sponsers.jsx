@@ -15,7 +15,7 @@ function Sponsers() {
         data-aos="fade-up"
         data-aos-delay="300"
       >
-        SPONSERS
+        SPONSORS
       </h1>
       <div className="cards">
         {sponser.map((image, index) => {

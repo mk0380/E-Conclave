@@ -61,15 +61,15 @@ function Intro() {
   };
 
   return (
-    <section className="introduction" id="introduction">
+    <section className="introduction" id="comp">
       <h1
         style={{ "font-family": "'Inter', sans-serif" }}
         data-aos="fade-up"
         data-aos-delay="300"
       >
-        INTRODUCTIONS
+        COMPETITIONS
       </h1>
-      <p
+      {/* <p
         style={{ "font-family": "'Montserrat', sans-serif" }}
         data-aos="fade-up"
         data-aos-delay="300"
@@ -77,7 +77,7 @@ function Intro() {
         The Entrepreneurial Conclave is conducted in conjunction with the main festival.
         E- Conclave aims to bring together India’s finest minds and accentuate the ideas and developments shooting up among entrepreneurs across the world. The conclave shall emphasize the challenges of an entrepreneur, the journey from ideation to success, and planning to execution. Growth-minded entrepreneurs and investors from all over the country can come together and take their businesses to the next level.
 
-      </p>
+      </p> */}
       <div className="cards">
         {intro.map((data, idex) => {
           return (
@@ -85,16 +85,17 @@ function Intro() {
               className="card"
               data-aos="fade-up"
               data-aos-delay={data.delay}
+              style={{transition:"0.2s all ease"}}
             >
-              <img src={data.logo} alt="Avatar" style={{ width: "100%" }} />
+              <div style={{width:"80%",margin:"6% auto",marginBottom:"0",height:"200px",overflow:"hidden",borderRadius:"30px"}}><img src={data.logo} alt="Avatar" style={{ width: "100%",borderRadius:"30px" }} /></div>
               <div className="container">
                 <h4 style={{ "font-family": "'Montserrat', sans-serif" }}>
                   <b>{data.heading}</b>
                 </h4>
-                <p style={{ "font-family": "'Inter', sans-serif" }}>
-                  {data.para}
+                <p style={{ "font-family": "'Montserrat', sans-serif" ,textAlign:"center"}}>
+                  PRIZE MONEY : ₹ 1,50,000
                 </p>
-                <Button
+                <div style={{margin:"0 auto"}}><Button
                   className="tech_btn text-white w-1/2"
                   onClick={handleOpen}
                 >
@@ -102,6 +103,14 @@ function Intro() {
                     Learn More
                   </a>
                 </Button>
+                <Button
+                  className="tech_btn text-white w-1/2"
+                  onClick={handleOpen}
+                >
+                  <a className="text-green-600 hover:text-yellow-500">
+                    Register
+                  </a>
+                </Button></div>
                 <Modal
                   // className='backdrop-blur-sm'
                   open={open}

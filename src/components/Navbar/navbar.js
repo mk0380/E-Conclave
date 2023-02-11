@@ -24,8 +24,13 @@ function Navbar() {
             </Link>
             <ul className={active} style={{letterSpacing:"2px"}}>
                 <li className="nav__item">
-                    <Link to="introduction" className="nav__link" spy={true} smooth={true} offset={-10} duration={700}>
-                        INTRODUCTION
+                    <Link to="about" className="nav__link" spy={true} smooth={true} offset={-10} duration={700}>
+                        ABOUT
+                    </Link>
+                </li>
+                <li className="nav__item">
+                    <Link to="comp" className="nav__link" spy={true} smooth={true} offset={-10} duration={700}>
+                        COMPETITIONS
                     </Link>
                 </li>
                 <li className="nav__item">
