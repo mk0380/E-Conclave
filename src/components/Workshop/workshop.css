@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-style: "Montserrat", sans-serif;
+}
+body {
+  width: 100vw;
+}
+
+.workshop {
+    width: 100%;
+    background-image: url("../img/intro.jpg");
+    background-size: cover;
+    background-position: top;
+    padding: 4%;
+    margin: 0;
+    /* border: 2px solid red; */
+    /* overflow-x: hidden; */
+  }
+  .workshop h1 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin: 2%;
+    margin-bottom: 4%;
+    letter-spacing: 0.8rem;
+  }
+  .workshop .cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 4% 0;
+  }
+  .workshop .card {
+    height: 400px;
+    width: 25%;
+    margin: 1% 0%;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+    letter-spacing: 0.09rem;
+    background: rgba(217, 217, 217, 0.18);
+    text-align: center;
+  }
+  .workshop .card a {
+    border: 2px solid white;
+    padding: 2% 5%;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 768px){
+    .workshop h1 {
+        font-size: 1.5rem;
+      }
+      .workshop .cards {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+      }
+      .workshop .card {
+        width: 60%;
+        height: 200px;
+        margin: 8px auto;
+      }
+      .workshop .card p {
+        font-size: 12px;
+      }
+      .workshop .card a {
+        font-size: 13px;
+      }
+  }

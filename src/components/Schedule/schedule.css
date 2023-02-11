@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-style: "Montserrat", sans-serif;
+}
+body {
+  width: 100vw;
+}
+.schedule {
+    width: 100%;
+    background-image: url("../img/intro.jpg");
+    background-size: cover;
+    background-position: top;
+    padding: 3%;
+  }
+  .schedule h1 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin: 2%;
+    margin-bottom: 4%;
+    letter-spacing: 0.8rem;
+  }
+  .schedule .btn {
+    display: flex;
+    justify-content: space-around;
+  }
+  .schedule a {
+    font-size: 22px;
+    letter-spacing: 0.09rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 1% 2%;
+    color: white;
+    text-decoration: none;
+  }
+@media screen and (max-width: 768px){
+.schedule h1 {
+    font-size: 1.5rem;
+  }
+  .schedule a {
+    padding: 3px 6px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+}

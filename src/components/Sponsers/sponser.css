@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-style: "Montserrat", sans-serif;
+}
+body {
+  width: 100vw;
+}
+.sponsers {
+    width: 100%;
+    background-image: url("../img/intro.jpg");
+    background-size: cover;
+    background-position: top;
+    padding: 3%;
+  }
+  .sponsers h1 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin: 2%;
+    margin-bottom: 4%;
+    letter-spacing: 0.8rem;
+  }
+  
+  .sponsers .cards {
+    background: rgba(59, 116, 148, 0.3);
+    border: 3px solid rgba(133, 133, 133, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 4% 0;
+  }
+  
+  .sponsers .card {
+    width: 20%;
+    height: 210px;
+    background-color: white;
+    margin: 2% 1%;
+    /* border: 2px solid red; */
+    overflow: hidden;
+  }
+  
+  .sponsers .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* overflow: hidden; */
+  }
+
+  @media screen and (max-width: 768px) {
+    .sponsers {
+      width: 100vw;
+    }
+    .sponsers .cards {
+      width: 100%;
+      justify-content: space-around;
+      height: 85vh;
+      /* overflow-y: scroll; */
+    }
+    .sponsers .card {
+      width: 60%;
+      height: 150px;
+      margin: 12px auto;
+    }
+    .sponsers h1 {
+      font-size: 1.5rem;
+    }
+  
+  }
+  

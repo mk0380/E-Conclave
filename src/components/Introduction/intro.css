@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-style: "Montserrat", sans-serif;
+}
+body {
+  width: 100vw;
+}
+
+.introduction {
+  width: 100%;
+  background-image: url("../img/intro.jpg");
+  background-size: cover;
+  background-position: top;
+  padding: 3%;
+}
+.introduction h1 {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  margin: 2%;
+  margin-bottom: 4%;
+  letter-spacing: 0.8rem;
+}
+.introduction p {
+  color: white;
+  margin: 4%;
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+}
+.introduction .cards {
+  background: rgba(59, 116, 148, 0.3);
+    border: 3px solid rgba(133, 133, 133, 0.5);
+    border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 4% 0;
+  overflow: hidden;
+}
+.introduction .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 30%;
+  /* border: 2px solid red; */
+  margin: 1.5% 0;
+}
+
+.introduction .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.introduction .container {
+  padding: 2px 16px;
+  text-align: center;
+}
+.introduction .container h4 {
+  color: white;
+  letter-spacing: 0.2rem;
+  font-size: 25px;
+  font-weight: bold;
+}
+.introduction .container p {
+  text-align: left;
+  font-size: 16px;
+}
+.introduction .container a {
+  color: #0077b5;
+  font-size: 16px;
+  /* padding: 5% 0; */
+}
+
+
+.cont {
+  background-color: #1b1919;
+  height: 90vh;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 10px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image_div {
+  height: 90%;
+  width: 40%;
+}
+.image_div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .cont {
+    flex-direction: column;
+  }
+  .image_div {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+  }
+  .content h1 {
+    /* font-size: 240px; */
+  }
+  .introduction {
+    /* border: 2px solid red; */
+    text-align: center;
+    /* margin-top: 10; */
+    padding: 4%;
+  }
+  .introduction h1 {
+    padding-top: 20px;
+    font-size: 1.5rem;
+  }
+  .introduction p {
+    font-size: 1rem;
+  }
+  .introduction .cards {
+    
+    /* background-color: lightgreen; */
+    /* flex-direction: column; */
+    width: 100%;
+    /* border: 2px solid green; */
+    justify-content: space-around;
+    height: 100vh;
+    overflow: scroll;
+    /* flex-basis: 500px; */
+    /* background-color: black; */
+  }
+  .introduction .card {
+    width: 80%;
+    /* height: auto; */
+    /* margin: auto; */
+    /* border: 2px solid red; */
+    /* padding: 0; */
+    overflow: hidden;
+    margin: 10px auto;
+    /* border: 2px solid red; */
+  }
+  .introduction .card .img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .introduction img {
+    /* height: 100%; */
+  }
+  /* .introduction .card .text{
+      font-size: 10px;
+      height: 46px;
+      padding: 0;
+    } */
+  .introduction .card h4 {
+    font-size: 1.4rem;
+  }
+  .introduction .card p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}

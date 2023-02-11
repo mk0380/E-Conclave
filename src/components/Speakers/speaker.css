@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-style: "Montserrat", sans-serif;
+}
+body {
+  width: 100vw;
+}
+
+.speakers {
+    width: 100%;
+    background-image: url("../img/intro.jpg");
+    background-size: cover;
+    background-position: top;
+    padding: 3%;
+  }
+  .speakers h1 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin: 2%;
+    margin-bottom: 4%;
+    letter-spacing: 0.8rem;
+  }
+  
+  .speakers p{
+    color: white;
+    margin: 4%;
+    font-size: 18px;
+    letter-spacing: 0.05rem;
+  }
+  
+  .speakers .text {
+    width: 100%;
+    position: absolute;
+    bottom: 70px;
+    text-align: center;
+    color: wheat;
+  }
+  .speakers .text h2 {
+    letter-spacing: 0.05rem;
+    margin: 2px auto;
+  }
+  .speakers .text p {
+    font-size: 14px;
+    letter-spacing: 0.01rem;
+  }
+  
+  .slider {
+    height: 450px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  .slide-track {
+    display: flex;
+    width: calc(250px * 20);
+    animation: scroll 30s linear infinite;
+  }
+  .slide-track:hover {
+    animation-play-state: paused;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 10));
+    }
+  }
+  .slide {
+    height: 380px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    perspective: 150px;
+    margin: 0.5%;
+  }
+  .slide img {
+    width: 100%;
+    object-fit: contain;
+    transition: transform 1s;
+  }
+  .slide img:hover {
+    transform: translateZ(20px);
+  }
+  .slider::before,
+  .slider::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  @media screen and (max-width: 768px){
+    .speakers h1 {
+        font-size: 1.5rem;
+      }
+      .speakers .cards {
+        /* background-color: lightgreen; */
+        flex-direction: column;
+        width: 100%;
+        /* border: 2px solid green; */
+        justify-content: space-around;
+        /* flex-basis: 500px; */
+        /* background-color: black; */
+      }
+      .speakers .card {
+        width: 60%;
+        height: 200px;
+        /* margin: auto; */
+        /* border: 2px solid red; */
+        margin: 10px auto;
+        /* border: 2px solid red; */
+      }
+      .speakers .card .img {
+        height: 150px;
+      }
+      .speakers img {
+        height: 100%;
+      }
+      .speakers .card .text {
+        font-size: 10px;
+        height: 46px;
+        padding: 0;
+      }
+  }
