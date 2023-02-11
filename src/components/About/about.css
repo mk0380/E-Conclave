@@ -13,45 +13,39 @@ body {
   width: 100vw;
 }
 
-.about{
+.about {
     width: 100%;
     background-image: url("../img/intro.jpg");
     background-size: cover;
     background-position: top;
     padding: 3%;
-  }
-  .about h1{
+}
+
+.about h1 {
     text-align: center;
     color: white;
     font-size: 45px;
     margin: 2%;
     margin-bottom: 4%;
     letter-spacing: 0.8rem;
-  }
-  .about h3{
+}
+
+.about h3 {
     text-align: center;
     color: white;
     font-size: 35px;
     margin: 2%;
     margin-bottom: 4%;
     letter-spacing: 0.1rem;
-  }
-  .about p{
+}
+
+.about p {
     color: white;
     margin: 4%;
     font-size: 18px;
     letter-spacing: 0.05rem;
-  }
+}
 
-  @media screen and (max-width: 768px){
-    .about h1 {
-        font-size: 1.5rem;
-      }
-      .about h3{
-        font-size: 1.2rem;
-      }
-      .about p {
-        font-size: 1rem;
-      }
-    }
-  
+.about span {
+    color: cyan;
+}
