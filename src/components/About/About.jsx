@@ -43,7 +43,7 @@ function About() {
                 data-aos="fade-up"
                 data-aos-delay="300"
             >
-                About <span >E-CONCLAVE Teckriti’23</span>
+                About <span >E-CONCLAVE Techkriti’23</span>
             </h3>
             <p
                 style={{ "font-family": "'Montserrat', sans-serif", marginBottom: "1px" }}

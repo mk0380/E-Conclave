@@ -27,7 +27,7 @@ body {
   margin: 2%;
   margin-bottom: 4%;
   margin-top: 0;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.3rem;
 }
 .introduction p {
   color: white;
@@ -67,17 +67,17 @@ body {
 }
 .introduction .container h4 {
   color: white;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   font-size: 25px;
   font-weight: bold;
 }
 .introduction .container p {
   text-align: left;
-  font-size: 16px;
+  font-size: 18px;
 }
 .introduction .container a {
   color: #0077b5;
-  font-size: 16px;
+  font-size: 18px;
   /* padding: 5% 0; */
 }
 
@@ -102,6 +102,7 @@ body {
 .image_div {
   height: 90%;
   width: 40%;
+  overflow: hidden;
 }
 .image_div img {
   width: 100%;
@@ -110,6 +111,11 @@ body {
 }
 .content {
   width: 50%;
+  /* border: 2px solid red; */
+  height: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* overflow-y: scroll; */
 }
 
 @media screen and (max-width: 768px) {
@@ -133,10 +139,10 @@ body {
   }
   .introduction h1 {
     padding-top: 20px;
-    font-size: 1.5rem;
+    font-size: 40px;
   }
   .introduction p {
-    font-size: 1rem;
+    font-size: 18px;
   }
   .introduction .cards {
     
@@ -173,10 +179,10 @@ body {
       padding: 0;
     } */
   .introduction .card h4 {
-    font-size: 1.4rem;
+    font-size: 35px;
   }
   .introduction .card p {
-    font-size: 1rem;
+    font-size: 18px;
     text-align: left;
   }
 }

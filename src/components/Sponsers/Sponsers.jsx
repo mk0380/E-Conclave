@@ -11,17 +11,17 @@ function Sponsers() {
   return (
     <section className="sponsers" id="partners">
       <h1
-        style={{ "font-family": "'Montserrat', sans-serif" }}
+        style={{ "fontFamily": "'Montserrat', sans-serif" }}
         data-aos="fade-up"
         data-aos-delay="300"
       >
         SPONSORS
       </h1>
-      <div className="cards">
+      <div className="cards" style={{ "fontFamily": "'Montserrat', sans-serif" }}>
         {sponser.map((image, index) => {
           return (
             <div
-              className="card"
+              className="card" data-tilt
               data-aos="fade-right"
               data-aos-delay={image.delay}
             >

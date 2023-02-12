@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import intro from "../Introduction/intro_data";
+import intro from "./worshop_data";
 import Aos from "aos";
 import "aos/dist/aos.css";
 // import React from 'react'
@@ -63,7 +63,7 @@ function Workshop() {
   return (
     <section className="workshop" id="workshop">
       <h1
-        style={{ "font-family": "'Inter', sans-serif" }}
+        style={{ "fontFamily": "'Montserrat', sans-serif" }}
         data-aos="fade-up"
         data-aos-delay="300"
       >
@@ -78,8 +78,8 @@ function Workshop() {
         E- Conclave aims to bring together India’s finest minds and accentuate the ideas and developments shooting up among entrepreneurs across the world. The conclave shall emphasize the challenges of an entrepreneur, the journey from ideation to success, and planning to execution. Growth-minded entrepreneurs and investors from all over the country can come together and take their businesses to the next level.
 
       </p> */}
-      <div className="cards">
-        {intro.map((data, idex) => {
+      <div className="cards" style={{ "fontFamily": "'Montserrat', sans-serif" }}>
+        {intro.map((data, index) => {
           return (
             <div
               className="card"
@@ -87,15 +87,15 @@ function Workshop() {
               data-aos-delay={data.delay}
               style={{transition:".5s all ease",display:"flex"}}
             >
-              <div style={{width:"50%",margin:"2%",overflow:"hidden",}}><img src={data.logo} alt="Avatar" style={{ width: "100%", height:"100%",objectFit:"cover" }} /></div>
+              <div style={{width:"50%",margin:"2%",overflow:"hidden",}}><img src={data.image} alt="Avatar" style={{ width: "100%", height:"100%",objectFit:"cover" }} /></div>
               <div className="container">
-                <h4 style={{ "font-family": "'Montserrat', sans-serif",marginBottom:"30%",marginTop:"30px" }}>
+                <h4 style={{ "fontFamily": "'Montserrat', sans-serif",marginBottom:"10px" }}>
                   <b>{data.heading}</b>
                 </h4>
                 {/* <p style={{ "font-family": "'Montserrat', sans-serif" ,textAlign:"center"}}>
                   PRIZE MONEY : ₹ 1,50,000
                 </p> */}
-                <div style={{margin:"0 auto"}}><Button
+                <div style={{margin:"0 auto",position:"absolute",bottom:"2%"}}><Button
                   className="tech_btn text-white w-1/2"
                   onClick={handleOpen}
                 >
@@ -105,7 +105,7 @@ function Workshop() {
                 </Button>
                 <Button
                   className="tech_btn text-white w-1/2"
-                  onClick={handleOpen}
+                  // onClick={handleOpen}
                 >
                   <a className="text-green-600 hover:text-yellow-500">
                     Register
@@ -122,7 +122,7 @@ function Workshop() {
                   <div className="center">
                     <div className="cont">
                       <div className="image_div">
-                        <img class="modal_img" src={data.logo} />
+                        <img class="modal_img" src={data.image} />
                       </div>
                       <div
                         className="content"
@@ -130,7 +130,7 @@ function Workshop() {
                       >
                         <h1
                           class="text-white text-3xl title-font font-medium mb-1"
-                          style={{ fontSize: "40px" }}
+                          style={{ fontSize: "45px" }}
                         >
                           {data.heading}
                         </h1>
@@ -138,15 +138,15 @@ function Workshop() {
 
                         <p
                           class="leading-relaxed text-white"
-                          style={{ fontSize: "22px" }}
+                          style={{ fontSize: "18px" }}
                         >
-                          {data.detail_para}
+                          {data.para}
                         </p>
                         <br />
 
                         <Button
                           className="w-full mt-20"
-                          style={{ height: "30px", width: "30px" }}
+                          style={{ height: "30px", width: "30px",overflow:"hidden" }}
                           onClick={handleClose}
                         >
                           Close

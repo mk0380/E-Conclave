@@ -10,14 +10,14 @@ function Schedule() {
   return (
     <section className="schedule" id="schedule">
       <h1
-        style={{ "font-family": "'Inter', sans-serif" }}
-        data-aos="fade-right"
-        data-aos-delay="500"
+        style={{ "fontFamily": "'Montserrat', sans-serif" }}
+        data-aos="fade-up"
+        data-aos-delay="300"
       >
         SCHEDULE
       </h1>
-      <div className="btn" data-aos="fade-left" data-aos-delay="500">
-        <a href="" style={{ "font-family": "'Montserrat', sans-serif" }}>
+      <div className="btn" data-aos="fade-up" data-aos-delay="300">
+        <a href="" style={{ "fontFamily": "'Montserrat', sans-serif" }}>
           Check Here
         </a>
       </div>
