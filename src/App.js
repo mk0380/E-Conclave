@@ -11,8 +11,10 @@ import About from './components/About/About';
 // import Card  from './components/Card/Card'
 import Flagship from './components/Flagship/Flagship'
 import Contact from './components/Contact/contact'
+import ReactGA from 'react-ga';
 
-
+const TRACKING_ID = "G-JPRDFBJ750"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   return (
