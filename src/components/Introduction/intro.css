@@ -46,7 +46,7 @@ body {
   overflow: hidden;
 }
 .introduction .card {
-  box-shadow: 0 4px 8px 0 cyan;
+  /* box-shadow: 0 4px 8px 0 cyan; */
   background-color: rgb(0, 33, 65,0.6);
   /* border: 2px solid cyan; */
   border-radius: 40px;
@@ -58,6 +58,8 @@ body {
 
 .introduction .card:hover {
   transform: scale(1.1);
+  border: 3px solid black;
+  box-shadow: 0 4px 8px 0 cyan;
   /* transition: 0.001s ease-in-out; */
 }
 
@@ -151,14 +153,15 @@ body {
     width: 100%;
     /* border: 2px solid green; */
     justify-content: space-around;
-    height: 100vh;
-    overflow: scroll;
+    /* padding: 1% 0; */
+    /* height: 100vh; */
+    /* overflow: scroll; */
     /* flex-basis: 500px; */
     /* background-color: black; */
   }
   .introduction .card {
-    width: 80%;
-    /* height: auto; */
+    width: 90%;
+    height: 360px;
     /* margin: auto; */
     /* border: 2px solid red; */
     /* padding: 0; */
@@ -179,10 +182,13 @@ body {
       padding: 0;
     } */
   .introduction .card h4 {
-    font-size: 35px;
+    font-size: 25px;
   }
   .introduction .card p {
     font-size: 18px;
     text-align: left;
+  }
+  .introduction .container{
+    padding: 0;
   }
 }

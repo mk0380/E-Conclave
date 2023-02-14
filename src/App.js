@@ -10,6 +10,7 @@ import Navbar from './components/Navbar/navbar'
 import About from './components/About/About';
 // import Card  from './components/Card/Card'
 import Flagship from './components/Flagship/Flagship'
+import Contact from './components/Contact/contact'
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <Workshop />
       <Schedule />
       <Sponsers />
+      <Contact/>
       <Footer />
       {/* <Card/> */}
     </div>

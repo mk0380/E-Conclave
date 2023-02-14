@@ -11,7 +11,7 @@ function Footer() {
   return (
     <>
       <footer className="footer">
-        <div className="logo" data-aos="fade-up" data-aos-delay="300">
+        <div className="logo" data-aos="fade-up" data-aos-delay="300" >
           <img src={Logo} alt="logo" />
         </div>
         <br />

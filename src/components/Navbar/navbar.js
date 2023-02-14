@@ -53,6 +53,16 @@ function Navbar() {
                         PARTNERS
                     </Link>
                 </li>
+                <li className="nav__item">
+                    <a href="https://drive.google.com/file/d/1HP1qg-MHPEbRwoanelj0-LxvBDiF7-fq/view" className="nav__link" target={"_blank"}>
+                        BROCHURE
+                    </a>
+                </li>
+                <li className="nav__item">
+                    <Link to="contact" spy={true} smooth={true} offset={-10} duration={700} className="nav__link">
+                        CONTACT US
+                    </Link>
+                </li>
                 <li><a href="/signin" className="signin" style={{fontSize:"20px"}}> Signin</a></li>
 
 

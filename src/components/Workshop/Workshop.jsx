@@ -85,7 +85,7 @@ function Workshop() {
               className="card"
               data-aos="fade-up"
               data-aos-delay={data.delay}
-              style={{transition:".5s all ease",display:"flex"}}
+              style={{transition:".2s all ease",display:"flex"}}
             >
               <div style={{width:"50%",margin:"2%",overflow:"hidden",}}><img src={data.image} alt="Avatar" style={{ width: "100%", height:"100%",objectFit:"cover" }} /></div>
               <div className="container">
@@ -95,7 +95,7 @@ function Workshop() {
                 {/* <p style={{ "font-family": "'Montserrat', sans-serif" ,textAlign:"center"}}>
                   PRIZE MONEY : ₹ 1,50,000
                 </p> */}
-                <div style={{margin:"0 auto",position:"absolute",bottom:"2%"}}><Button
+                <div style={{display:"flex",justifyContent:"space-between",alignItems:""}}><Button
                   className="tech_btn text-white w-1/2"
                   onClick={handleOpen}
                 >
@@ -156,8 +156,8 @@ function Workshop() {
                   </div>
                   {/* </Box> */}
                 </Modal>
-                <br />
-                <br />
+                {/* <br /> */}
+                {/* <br /> */}
               </div>
             </div>
           );

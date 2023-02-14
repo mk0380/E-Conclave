@@ -46,7 +46,7 @@ body {
   overflow: hidden;
 }
 .workshop .card {
-  box-shadow: 0 4px 8px 0 cyan;
+  /* box-shadow: 0 4px 8px 0 white; */
   background-color: rgb(116, 151, 227,0.2);
   /* border: 2px solid cyan; */
   /* border-radius: 40px; */
@@ -59,11 +59,17 @@ body {
 }
 
 .workshop .card:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
+  /* border: 1px solid black; */
+  box-shadow: 0 4px 8px 0 cyan;
 }
 
 .workshop .container {
   /* border: 2px solid yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 2px 16px;
   text-align: center;
   
@@ -75,7 +81,7 @@ body {
 .workshop .container h4 {
   color: white;
   letter-spacing: 0.2rem;
-  font-size: 25px;
+  font-size: 21px;
   font-weight: bold;
   /* margin-top: 5%; */
 }
@@ -85,7 +91,8 @@ body {
 }
 .workshop .container a {
   color: #0077b5;
-  font-size: 18px;
+  font-size: 15px;
+  margin: 0 2px;
   /* padding: 5% 0; */
 }
 
@@ -118,6 +125,9 @@ body {
 }
 .content {
   width: 50%;
+}
+.button{
+
 }
 
 @media screen and (max-width: 768px) {
@@ -156,10 +166,11 @@ body {
     width: 100%;
     /* border: 2px solid green; */
     justify-content: space-around;
-    height: 100vh;
-    overflow: scroll;
+    /* height: 100vh; */
+    /* overflow: scroll; */
     /* flex-basis: 500px; */
     /* background-color: black; */
+    padding: 0;
   }
   .workshop .card {
     /* width: 80%; */
@@ -168,8 +179,8 @@ body {
     /* border: 2px solid red; */
     /* padding: 0; */
     overflow: hidden;
-    margin: 10px auto;
-    width: 90%;
+    /* margin: 10px 0; */
+    width: 100%;
     /* border: 2px solid red; */
   }
   .workshop .card .img {
@@ -190,6 +201,9 @@ body {
   }
   .workshop .card a {
     font-size: 10px;
-    text-align: left;
+    /* text-align: left; */
+  }
+  .workshop .container{
+    width:60%;
   }
 }

@@ -41,11 +41,18 @@ body {
 
 .about p {
     color: white;
-    margin: 4%;
+    margin: 2%;
     font-size: 18px;
     letter-spacing: 0.05rem;
+    
 }
 
 .about span {
     color: cyan;
+}
+
+@media screen and (max-width: 768px){
+    .about p{
+        /* margin: 4% 0; */
+    }
 }
