@@ -10,10 +10,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
   height: 80px;
+  /* width: 100vw;
   position: fixed;
-  top: 0;
+  top: 0; */
   z-index: 999;
   background: rgb(0, 33, 65,0.6);
 }
@@ -29,11 +29,15 @@
 }
 
 .nav ul {
-  padding-right: 4%;
+  /* padding-right: 4%; */
 }
 
 .nav__brand {
   text-transform: uppercase;
+}
+
+.nav__link {
+  margin: 0 10px;
 }
 
 .nav__link:hover {
@@ -43,7 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 3rem;
+  /* gap: 3rem; */
 }
 
 .nav__toggler {

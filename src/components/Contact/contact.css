@@ -128,10 +128,14 @@ body {
     color: white;
     margin-top: 5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     /* margin: 0 auto; */
     /* width: 100%; */
+  }
+
+  .links a{ 
+    padding: 0 5px !important;
   }
   .card .links .fa {
     padding: 0;

@@ -39,10 +39,10 @@ export default function Contactus() {
               <div className="text">
                 <p className="name">Harsh Pandey </p>
                 <p className="no">
-                  <i className="fa fa-phone">‎ ‎ ‎ 8290470307</i>
+                  <i> +91 8290470307</i>
                 </p>
                 <p className="email">
-                  <i className="fa fa-envelope">‎ ‎ ‎ harshp22@iitk.ac.in</i>
+                  <i>arshp22@iitk.ac.in</i>
                 </p>
               </div>
               <div className="links">
@@ -61,10 +61,10 @@ export default function Contactus() {
               <div className="text">
                 <p className="name">Vikas Nakwal</p>
                 <p className="no">
-                  <i className="fa fa-phone">‎ ‎ ‎ 7014195533</i>
+                  <i> +91 7014195533</i>
                 </p>
                 <p className="email">
-                  <i className="fa fa-envelope">‎ ‎ ‎ vkvikas1110@gmail.com</i>
+                  <i> vkvikas1110@gmail.com</i>
                 </p>
               </div>
               <div className="links">
@@ -83,10 +83,10 @@ export default function Contactus() {
               <div className="text">
                 <p className="name">Sanober Ali</p>
                 <p className="no">
-                  <i className="fa fa-phone">‎ ‎ ‎ 9541741362</i>
+                  <i> +91 9541741362</i>
                 </p>
                 <p className="email">
-                  <i className="fa fa-envelope">‎ ‎ ‎ asanober94@gmail.com</i>
+                  <i> asanober94@gmail.com</i>
                 </p>
               </div>
               <div className="links">
@@ -120,10 +120,10 @@ export default function Contactus() {
               <div className="text">
                 <p className="name">Divya m</p>
                 <p className="no">
-                  <i className="fa fa-phone">‎ ‎ ‎ 7034516462</i>
+                  <i> +91 7034516462</i>
                 </p>
                 <p className="email">
-                  <i className="fa fa-envelope">‎ ‎ ‎ divya20@iitk.ac.in</i>
+                  <i> divya20@iitk.ac.in</i>
                 </p>
               </div>
               <div className="links">
@@ -154,10 +154,10 @@ export default function Contactus() {
               <div className="text">
                 <p className="name">Bugada Ashritha </p>
                 <p className="no">
-                  <i className="fa fa-phone">‎ ‎ ‎ 8309335762</i>
+                  <i> +91 8309335762</i>
                 </p>
                 <p className="email">
-                  <i className="fa fa-envelope">‎ ‎ ‎ bugada20@iitk.ac.in </i>
+                  <i> bugada20@iitk.ac.in </i>
                 </p>
               </div>
               <div className="links">
@@ -176,10 +176,10 @@ export default function Contactus() {
               <div className="text">
                 <p className="name">Parth Sharma</p>
                 <p className="no">
-                  <i className="fa fa-phone">‎ ‎ ‎ 9657728280</i>
+                  <i> +91 9657728280</i>
                 </p>
                 <p className="email">
-                  <i className="fa fa-envelope">‎ ‎ ‎ parths20@iitk.ac.in</i>
+                  <i> parths20@iitk.ac.in</i>
                 </p>
               </div>
               <div className="links">
@@ -198,10 +198,10 @@ export default function Contactus() {
               <div className="text">
                 <p className="name">Aakarsh Mittal</p>
                 <p className="no">
-                  <i className="fa fa-phone">‎ ‎ ‎ 9627568555</i>
+                  <i> +91 9627568555</i>
                 </p>
                 <p className="email">
-                  <i className="fa fa-envelope">‎ ‎ ‎ amittal20@iitk.ac.in</i>
+                  <i> amittal20@iitk.ac.in</i>
                 </p>
               </div>
               <div className="links">
@@ -232,10 +232,10 @@ export default function Contactus() {
               <div className="text">
                 <p className="name">Aditya Kushwaha</p>
                 <p className="no">
-                  <i className="fa fa-phone">‎ ‎ ‎9452522758</i>
+                  <i>+91 9452522758</i>
                 </p>
                 <p className="email">
-                  <i className="fa fa-envelope">‎ ‎ ‎ adi.nitesh05@gmail.com</i>
+                  <i> adi.nitesh05@gmail.com</i>
                 </p>
               </div>
               <div className="links">
@@ -254,10 +254,10 @@ export default function Contactus() {
               <div className="text">
                 <p className="name">Amit Kumar</p>
                 <p className="no">
-                  <i className="fa fa-phone">‎ ‎ ‎ 8740938236</i>
+                  <i> +91 8740938236</i>
                 </p>
                 <p className="email">
-                  <i className="fa fa-envelope">‎ ‎ ‎ amitkumarsk588@gmail.com</i>
+                  <i> amitkumarsk588@gmail.com</i>
                 </p>
               </div>
               <div className="links">

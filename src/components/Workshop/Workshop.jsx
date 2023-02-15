@@ -89,13 +89,13 @@ function Workshop() {
             >
               <div style={{width:"50%",margin:"2%",overflow:"hidden",}}><img src={data.image} alt="Avatar" style={{ width: "100%", height:"100%",objectFit:"cover" }} /></div>
               <div className="container">
-                <h4 style={{ "fontFamily": "'Montserrat', sans-serif",marginBottom:"10px" }}>
+                <h4 style={{ "fontFamily": "'Montserrat', sans-serif",marginBottom:"10px",letterSpacing:"0" }}>
                   <b>{data.heading}</b>
                 </h4>
                 {/* <p style={{ "font-family": "'Montserrat', sans-serif" ,textAlign:"center"}}>
                   PRIZE MONEY : ₹ 1,50,000
                 </p> */}
-                <div style={{display:"flex",justifyContent:"space-between",alignItems:""}}><Button
+                <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",flexDirection:"column"}}><Button
                   className="tech_btn text-white w-1/2"
                   onClick={handleOpen}
                 >
